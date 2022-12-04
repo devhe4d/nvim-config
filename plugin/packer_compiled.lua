@@ -74,15 +74,40 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    loaded = true,
+    path = "/Users/shrab/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
+  ReplaceWithRegister = {
+    loaded = true,
+    path = "/Users/shrab/.local/share/nvim/site/pack/packer/start/ReplaceWithRegister",
+    url = "https://github.com/vim-scripts/ReplaceWithRegister"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/shrab/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
-  ["vim-nightfly-guicolors"] = {
+  ["vim-maximizer"] = {
     loaded = true,
-    path = "/Users/shrab/.local/share/nvim/site/pack/packer/start/vim-nightfly-guicolors",
-    url = "https://github.com/bluz71/vim-nightfly-guicolors"
+    path = "/Users/shrab/.local/share/nvim/site/pack/packer/start/vim-maximizer",
+    url = "https://github.com/szw/vim-maximizer"
+  },
+  ["vim-nightfly-colors"] = {
+    loaded = true,
+    path = "/Users/shrab/.local/share/nvim/site/pack/packer/start/vim-nightfly-colors",
+    url = "https://github.com/bluz71/vim-nightfly-colors"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/Users/shrab/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
+  },
+  ["vim-tmux-navigator"] = {
+    loaded = true,
+    path = "/Users/shrab/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
+    url = "https://github.com/christoomey/vim-tmux-navigator"
   }
 }
 

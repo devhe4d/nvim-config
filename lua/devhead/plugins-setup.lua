@@ -11,6 +11,13 @@ end
 
 local packer_bootstrap = ensure_packer()
 
+vim.cmd([[ 
+  augroup packer_user_config
+    autocmd!
+    autocmd BufWritePost plugins-setup.lua source <afile> | PackerSync
+  augroup end
+]])
+
 local status, packer = pcall(require, "packer")
 if not status then
   return
@@ -19,12 +26,12 @@ end
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'bluz71/vim-nightfly-colors'
-  -- My plugins here
-  -- use 'foo1/bar1.nvim'
-  -- use 'foo2/bar2.nvim'
+  use 'christoomey/vim-tmux-navigator'
+  use 'szw/vim-maximizer'
+  use 'tpope/vim-surround'
+  use 'vim-scripts/ReplaceWithRegister'
+  use 'numToStr/Comment.nvim'
 
-  -- Automatically set up your configuration after cloning packer.nvim
-  -- Put this at the end after all plugins
   if packer_bootstrap then
     require('packer').sync()
   end
